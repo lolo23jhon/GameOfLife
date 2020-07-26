@@ -65,7 +65,7 @@ void Application::input(float t_dt) {
 	sf::Vector2f change;
 
 	if (m_keyboard.isKeyDown(sf::Keyboard::P)) {
-		std::cin.get();
+		std::cin.get(); // Change this!
 	}
 
 	if (m_keyboard.isKeyDown(sf::Keyboard::W)) {

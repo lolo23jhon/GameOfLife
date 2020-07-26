@@ -14,8 +14,8 @@ public:
 
 
 protected:
-	const Application const* m_application;
-	const Config const* m_config;
+	const Application *const m_application;
+	const Config *const m_config;
 	std::vector<sf::Vertex> m_cellVertexPoints;
 
 	unsigned getCellIndex(unsigned t_x, unsigned t_y);

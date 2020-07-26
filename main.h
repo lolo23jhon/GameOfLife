@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <string>
 #include <iostream>
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 
 #include "globals.h"
 #include "ResourceManager.h"
