@@ -95,7 +95,7 @@
     <LibraryPath>"C:\C++ Libraries\SFML\lib";$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>"C:\C++ Libraies\SFML\include";$(IncludePath)</IncludePath>
+    <IncludePath>"C:\C++ Libraries\SFML\include";$(SolutionDir);$(IncludePath)</IncludePath>
     <LibraryPath>"C:\C++ Libraries\SFML\lib";$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -150,8 +150,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\C++ Libraries\SFML\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

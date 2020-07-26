@@ -21,6 +21,9 @@ Application::Application(const Config& t_config) :
 
 void Application::run()
 {
+	std::cout << "PAUSED: press ENTER on the console window to resume." << std::endl;
+	std::cin.get();
+
 	sf::Clock deltaClock;
 	unsigned year{ 0 };
 	m_window.setKeyRepeatEnabled(false);
@@ -65,7 +68,8 @@ void Application::input(float t_dt) {
 	sf::Vector2f change;
 
 	if (m_keyboard.isKeyDown(sf::Keyboard::P)) {
-		std::cin.get(); // Change this!
+		std::cout << "PAUSED: press ENTER on the console window to resume." << std::endl;
+		std::cin.get();
 	}
 
 	if (m_keyboard.isKeyDown(sf::Keyboard::W)) {
